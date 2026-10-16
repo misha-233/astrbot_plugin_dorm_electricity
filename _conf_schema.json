@@ -1,0 +1,39 @@
+{
+  "base_url": {
+    "type": "string",
+    "description": "查询接口地址",
+    "hint": "能源系统后台 ashx 接口，一般不需要改。",
+    "default": "http://nyglxt.sanxiau.edu.cn/weixin/ashx/frmuser.ashx"
+  },
+  "default_school": {
+    "type": "string",
+    "description": "默认校区",
+    "hint": "未绑定房间但指定了房间号时使用的校区。",
+    "default": "重庆三峡科技大学百安校区"
+  },
+  "request_timeout": {
+    "type": "float",
+    "description": "接口超时（秒）",
+    "default": 15.0
+  },
+  "allow_self_bind": {
+    "type": "bool",
+    "description": "允许所有人自助绑定房间",
+    "hint": "关闭后只有管理员能执行 /电费绑定。",
+    "obvious_hint": true,
+    "default": true
+  },
+  "allow_any_room": {
+    "type": "bool",
+    "description": "允许查询未绑定的房间号",
+    "hint": "开启后，/电费 L1-0001 可以查任意房间；关闭时只查自己绑定的房间，避免被当成任意宿舍查询器。",
+    "obvious_hint": true,
+    "default": false
+  },
+  "low_balance_threshold": {
+    "type": "float",
+    "description": "低余额提醒线（元）",
+    "hint": "查询结果低于此值时附带一句提醒；填 0 关闭。",
+    "default": 10.0
+  }
+}

@@ -1,0 +1,9 @@
+name: astrbot_plugin_dorm_electricity
+display_name: 宿舍电费查询
+desc: 查询重庆三峡科技大学宿舍电费余额；支持在群里自助绑定房间（校区→楼栋→房间），并作为 LLM 工具供机器人主动查询。
+version: v0.1.0
+author: Eta
+tags:
+  - 电费
+  - 宿舍
+  - 余额查询
